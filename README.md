@@ -16,3 +16,9 @@ For some reason, last four lines of the second tensor (IMAGE_NAME_output1.txt) i
 it is replaced with zeros to be consistent with DPU output format. zeroGen.py is used to generate zeros as filler elements.
 
 Information on Anchor boxes can be found in yolov3_voc.prototxt and class list is available in voc_classes.txt file.
+
+To do List:
+1. Form tensor outputs get bounding boxes and class confidence scores
+2. Filter bboxes based on confidence threshold
+3. Filter bboxes for non-maxima supression
+4. Draw boxes on images using openCV
